@@ -1,0 +1,27 @@
+.bigbox,.box,.radius {margin: 0 auto;}
+.bigbox{
+  width: 250px;
+  height: 250px;
+  background-color: black;
+   position:relative;
+}
+.box{
+  width: 200px;height: 200px;
+  background-color: red;
+  box-shadow: 10px 10px 10px yellow;
+}
+.ball{
+  width: 50px;height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  transition:all 2s;
+ /* transform:rotate(20 deg) scale(1.5);*/
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}
+.box:hover .ball{
+  background-color: yellow;
+  left: 100px;
+  top: 100px;
+}
