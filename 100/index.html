@@ -6,7 +6,7 @@
 	<style>
 		*{margin: 0;padding: 0;}
 		.header{
-		  line-height: 50px;
+		  line-height: 80px;
 		  text-align: center;
 		  color: red;
 		  background-color: lightgreen;
@@ -14,19 +14,26 @@
 		.content {
 		  background-color: yellow;
 		}
-		.content .list-a{
-		  width:600px;
+		.content list{
+		  width:700px;
 		  margin:0 auto;
-		  background-color: deepred;
-		  border:1px dotted black;
 		}
 		.content h3{
 		  color:blue;
 		  text-align: center;
-		  line-height:40px;
+		  line-height:50px;
 		}
 		.content ol{
 		  text-align: center;
+		  line-height:30px;
+		}
+		.content .list-a{
+		  background-color: deepred;
+		  border:1px dotted black;
+		}
+		.content .list-b{
+		  background-color: deepred;
+		  border:1px dotted black;
 		}
 		.footer{
 			height:100px;
@@ -40,8 +47,11 @@
 	</style>
 </head>
 <body>
-	<div class="header">我的网页作品列表</div>
+	<div class="header">
+		<h1>我的网页作品列表</h1>
+	</div>
 	<div class="content">
+	<div class="list">
 	  <div class="list-a">
 	  <h3>Day Day Web List</h3>
 	  <ol>
@@ -62,6 +72,10 @@
   		<li><a href="15">Day-Fifteen: hello world!</a></li>
 	  </ol>
 	  </div>
+	  <div class="list-b">
+	  	
+	  </div>
+	</div>
 	</div>
 	<div class="footer">
 		<p><a href="http://user.qzone.qq.com/527956352/main">Email:527956352@qq.com</a></p>
