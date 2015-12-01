@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hr 属性及设置</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		a{text-decoration:none;}
+		.header{
+		  line-height: 80px;
+		  text-align: center;
+		  color: red;
+		  background-color: lightgreen;
+		}
+
+		.footer{
+			height:100px;
+			background-color: black;
+		}
+		.footer p{
+			text-align:center;
+			font-size: 12px;
+			line-height: 100px;
+		}
+		.footer a{text-decoration: underline;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>hr 属性及设置</h1>
+	</div>
+	<div class="banner">
+		<hr width=80% size=3 color=#5151A2 align:center; style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
+	</div>
+	<div class="content">
+		<h3>用简单的“hr”语句就能实现多样化的分割效果： </h3>
+		<p>
+			<textarea name="hr效果" id="" cols="30" rows="10">
+			最基本的：<hr width=300 size=1 color=#5151A2 align=center noshade>。其中 width 规定线条的长度，还可以是百分比；color 表示颜色，size 表示厚度；align 规定线条位置，有left、right、center；noshade 表示是否有立体效果。</p>
+			<h3>两头渐变透明：</h3>
+			<p><hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"></p>
+			<h3>　　右边渐变透明：</h3>
+			<p><hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"></p>
+			<h3>　　画虚线：</h3>
+			<p><hr width=80% size=1 color=#5151A2 style="border:1 dashed #5151A2"></p>
+			<h3>　　画双线：</h3>
+			<p><hr width=80% size=3 color=#5151A2 style="border:3 double green"></p>
+			<h3>　　立体效果：</h3>
+			<p><hr width=80% size=3 color=#5151A2 style="filter:progid:DXImageTransform.Microsoft.Shadow(color#5151A2,direction:145,strength:15)"></p>
+			<h3>　　纺棰形：</h3>
+			<p><hr width=80% size=30 color=#5151A2 style="filter:alpha(opacity=100,finishopacity=0,style=2)"></p>
+			<h3>　　钢针效果：</h3>
+			<p><hr width=80% size=3 color=#5151A2　style="filter:progid:DXImageTransform.Microsoft.Glow(color=#5151A2,strength=10)">
+			</textarea>
+		</p>
+		<h3>显示结果分别为:</h3>
+		<p>
+			没有设置宽度的水平线默认为100%，所以前三条设置的对齐看不到效果
+			<textarea name="显示结果" id="" cols="30" rows="10">
+			1、普通分隔线：textarea<hr>
+
+			2、分隔线宽度属性：<hr width=50%> 或者 <hr width=250> （宽度为实际点数或百分比）
+
+			3、分隔线位置属性：<hr align=right width=50%> （位置分为 Left、Center、Right 三种）
+
+			4、分隔线厚度属性：<hr style="height:10px"> （奇怪，height=10 似乎不能起到效果）
+
+			5、分隔线无阴影属性：<hr style="height:10px" noshade>
+
+			6、分隔线彩色属性：<hr color=red> 或者 <hr color=#FF0000> （颜色可调）
+
+			7、渐变颜色的分隔线：
+			<hr style="filter:alpha(opacity=5,finishopacity=100,style=1);height:10px" color=green>
+
+			<hr style="filter:alpha(opacity=100,finishopacity=5,style=1);height:10px" color=blue>
+
+			8、中心透明的分隔线：
+			<hr style="filter:alpha(opacity=0,finishopacity=100,style=2);height:12px" color=orange>
+
+			<hr style="filter:alpha(opacity=0,finishopacity=100,style=3);height:12px" color=#FF00FF>
+
+			9、中心不透明的分隔线：
+			<hr style="filter:alpha(opacity=100,finishopacity=0,style=2);height:15px" color=yellow>
+
+			<hr style="filter:alpha(opacity=100,finishopacity=0,style=3);height:15px" color=#00FFFF>
+
+			10、波浪线：
+			<hr style="filter:wave(strength=9,freq=2,lightstrength=20,phase=9);height:15px" color=pink width=95%>
+
+			11、三色线：
+			<hr style="border-top: #ff0000 solid; color: #00ff00; border-bottom: #0000ff solid; height: 9px">
+
+			12、虚线：
+			<hr style="border-top: 2px dashed; border-bottom: 2px dashed; height: 2px" color=black>
+
+			13、竖线：
+			<hr style="height:100px; width:4px" color=orange>
+
+			<hr style="filter:alpha(opacity=100,finishopacity=5,style=2); height:100px; width:5px" color=navy>
+
+			<hr style="filter:alpha(opacity=0,finishopacity=100,style=2);height:100px; width:4px" color=red>
+			</textarea>
+		</p>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
