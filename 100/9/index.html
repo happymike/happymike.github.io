@@ -13,8 +13,10 @@
 		  background-color: lightgreen;
 		}
 		.banner{width: 100%;margin: 0 auto;}
-		.content .content-left{width: 300px;float: left;}
-		.content-right{width: 300px;clear:left;float: right;}
+		.content{width: 1200px;margin-top:30px;margin-bottom: 30px;margin: 0 auto;}
+		.content .content-left{width:1000px;}
+		.content .content-right{width: 80%px;margin-top: 20px;}
+		.content textarea{width: 1224px ;height: 213px ;}
 		.footer{
 			height:100px;
 			background-color: black;
@@ -38,21 +40,21 @@
 		<div class="content-left">
 		<h3>用简单的“hr”语句就能实现多样化的分割效果： </h3>
 		<p>
-			<textarea name="hr效果" id="" cols="30" rows="10">
+			<textarea name="hr效果" id="" cols="30" rows="10" >
 			最基本的：<hr width=300 size=1 color=#5151A2 align=center noshade>。其中 width 规定线条的长度，还可以是百分比；color 表示颜色，size 表示厚度；align 规定线条位置，有left、right、center；noshade 表示是否有立体效果。</p>
 			<h3>两头渐变透明：</h3>
 			<p><hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"></p>
-			<h3>　　右边渐变透明：</h3>
+			<h3>右边渐变透明：</h3>
 			<p><hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=1)"></p>
-			<h3>　　画虚线：</h3>
+			<h3>画虚线：</h3>
 			<p><hr width=80% size=1 color=#5151A2 style="border:1 dashed #5151A2"></p>
-			<h3>　　画双线：</h3>
+			<h3>画双线：</h3>
 			<p><hr width=80% size=3 color=#5151A2 style="border:3 double green"></p>
-			<h3>　　立体效果：</h3>
+			<h3>立体效果：</h3>
 			<p><hr width=80% size=3 color=#5151A2 style="filter:progid:DXImageTransform.Microsoft.Shadow(color#5151A2,direction:145,strength:15)"></p>
-			<h3>　　纺棰形：</h3>
+			<h3>纺棰形：</h3>
 			<p><hr width=80% size=30 color=#5151A2 style="filter:alpha(opacity=100,finishopacity=0,style=2)"></p>
-			<h3>　　钢针效果：</h3>
+			<h3>钢针效果：</h3>
 			<p><hr width=80% size=3 color=#5151A2　style="filter:progid:DXImageTransform.Microsoft.Glow(color=#5151A2,strength=10)">
 			</textarea>
 		</p>
@@ -60,7 +62,7 @@
 		<div class="content-right">
 		<h3>显示结果分别为:</h3>
 		<p>
-			<textarea name="显示结果" id="" cols="30" rows="10">
+			<textarea name="显示结果" id="" cols="30" rows="10" >
 			没有设置宽度的水平线默认为100%，所以前三条设置的对齐看不到效果</br>
 			
 			1、普通分隔线：textarea<hr></br>
