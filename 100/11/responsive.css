@@ -1,0 +1,46 @@
+.first,.second{
+	line-height: 200px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 30px; 
+}
+.left,.right{
+	line-height: 100px;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+}
+.first{
+	height: 200px;
+	background-color:deeppink;
+}
+.second{
+	height: 200px;
+	background-color: lightgreen;
+}
+.left{
+	width: 50%;
+	height: 100px;
+	background-color: blue;
+	float: left;
+}
+.right{
+	width: 50%;
+	height: 100px;
+	background-color: yellow;
+	float: left;
+}
+@media (max-width:1000px) {
+	.left{
+		float:none;
+		width: 100%;
+	}
+}
+@media (max-width: 1000px) {
+	.right{
+		float:none;
+		width: 100%;
+	}
+	
+}
