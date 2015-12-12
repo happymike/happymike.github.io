@@ -3,7 +3,7 @@
 	text-align: center;
 	color: #fff;
 	font-size: 24px;
-	margin-bottom: 30px; 
+/*	margin-bottom: 30px; */
 }
 .first{
 	height: 100px;
@@ -15,23 +15,36 @@
 }
 .third{
 	height: 100px;
-	background-color: #000;
+	background-color: lightseagreen;
 }
-@media (min-width:800px) {
+@media (min-width:500px) {
 	.first{
 		float:left;
-		width: 33.33%;
+		width: 50%;
 	}
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 	.second{
 		float:left;
-		width: 33.33%;
+		width: 50%;
 	}	
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 	.third{
-		float: left;
-		width: 33.33%;
+		clear:both;
 	}
 }
+/*@media (min-width: 500px) and (max-width: 900px){
+	body{
+		background-color: #bada55;
+	}
+}*//*分开写如下：*/
+@media (min-width: 500px){
+	body{
+		background-color: #bada55;
+	}
+@media (min-width: 900px){
+	body{
+		background-color: #fff;
+	}
+}/*小数值在前面，大数值在后面，反过来时，在超过大数值之后，颜色还会是大数值规定的，因为大于小数值的范围，包含大于大数值的范围*/
