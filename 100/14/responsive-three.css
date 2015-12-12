@@ -41,7 +41,7 @@
 }*//*分开写如下：*/
 @media (min-width: 500px){
 	body{
-		background-color: #bada55;
+		background-color: #000;
 	}
 @media (min-width: 900px){
 	body{
