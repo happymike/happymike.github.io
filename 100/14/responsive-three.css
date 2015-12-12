@@ -1,0 +1,37 @@
+.first,.second,.third{
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 30px; 
+}
+.first{
+	height: 100px;
+	background-color:deeppink;
+}
+.second{
+	height: 100px;
+	background-color: lightgreen;
+}
+.third{
+	height: 100px;
+	background-color: #000;
+}
+@media (min-width:800px) {
+	.first{
+		float:left;
+		width: 33.33%;
+	}
+}
+@media (min-width: 800px) {
+	.second{
+		float:left;
+		width: 33.33%;
+	}	
+}
+@media (min-width: 800px) {
+	.third{
+		float: left;
+		width: 33.33%;
+	}
+}
