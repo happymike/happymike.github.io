@@ -1,0 +1,68 @@
+*{margin: 0 ;padding: 0;}
+*{box-sizing: border-box;}
+.clearfix::before, .clearfix::after {content: " ";display: table;}
+.clearfix:after{clear: both;}
+.clearfix{zoom:1;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.header h1{
+	line-height: 140px;
+	text-align: center;
+	font-weight: normal;
+	color:red; 
+	display: block;
+	background-color: lightblue;
+}
+.main{
+	width: 618px;
+	margin: 0 auto;
+}
+.main ul{
+	width: 618px;
+	margin: 0 auto;/*width为确定值时起作用，为百分数时无作用*/
+	margin: 30px;/*没有此项为什么还有与header的上边距*/
+}
+	.main li{
+		height: 96px;/*高度该不该给？由什么属性控制*/
+		margin-top: 20px;
+	}
+	.main .id{
+		width: 48px;
+		line-height: 96px;
+		text-align: center;
+		color: #fff;
+  		font-family: arial;
+  		font-size: 18px;
+		background-color: lightgreen;
+		float: left;
+		
+	}
+	.main .title{
+		width: 570px;
+		padding: 20px;
+		background-color: red;
+		float: right;
+		box-shadow: 2px 2px 2px yellow;
+		transition:all 1s;
+		
+	}
+	.main .title:hover{
+		box-shadow: 5px 5px 5px green;
+	}
+	.main .title h3{
+		line-height: 55px;/*line-height应该是96px,但 不好使*/
+		transition:all 1s;/*对h3设置transition,鼠标经过.title 而没有到达h3时，h3自动执行transition*/
+	}
+	.main .title h3:hover{
+		color: #fff;
+		font-size: 24px;
+	}
+.footer{
+	text-align: center;/*加在a标签里不起作用，加在footer里面起作用*/
+	background-color: black;
+}
+	.footer a{
+		line-height: 150px;
+	}
+
+/*宽度什么时候可以给百分数，什么时候给确定值*/
