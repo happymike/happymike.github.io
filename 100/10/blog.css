@@ -4,7 +4,6 @@ a{text-decoration: none;}
 .clearfix:after{clear: both;}
 .clearfix{zoom:1;}
 ul{list-style: none;}
-h1{text-align:center;color:red;}
 .banner-inner,.content-inner{margin: 0 auto;}
 .header{
 	background-color: #ffffff;

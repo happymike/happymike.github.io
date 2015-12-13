@@ -55,7 +55,7 @@ a{text-decoration: none;}
 	}
 	.main .title h3:hover{
 		color: #fff;
-		font-size: 24px;
+		font-size: 20px;
 	}
 .footer{
 	text-align: center;/*加在a标签里不起作用，加在footer里面起作用*/
