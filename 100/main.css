@@ -10,9 +10,25 @@ a{text-decoration: none;}
 	text-align: center;
 	font-weight: normal;
 	color:red; 
-	display: block;
+/*	display: block;  h 是块元素*/
 	background-color: lightblue;
 }
+/*.nav{
+	float: right;
+	
+}
+.nav ul{
+		
+		right: 70px;
+		color: #6e6e6e;
+		font-family: arial;
+		font-size: 15px;}
+	.nav li{
+		line-height: 120px;
+		float: right;
+		margin-left: 50px;}
+	.nav li .li-center{
+		border-right: 2px solid red}*/
 .main{
 	width: 618px;
 	margin: 0 auto;
