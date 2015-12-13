@@ -6,7 +6,7 @@
 ul{list-style: none;}
 a{text-decoration: none;}
 .header h1{
-	line-height: 140px;
+	line-height: 120px;
 	text-align: center;
 	font-weight: normal;
 	color:red; 
@@ -60,12 +60,17 @@ a{text-decoration: none;}
 		font-size: 20px;
 	}
 .footer{
-	text-align: center;/*加在a标签里不起作用，加在footer里面起作用*/
 	background-color: black;
 }
-	.footer h4{
-		line-height: 150px;
-		color: blue;
+	.footer p{
+			text-align:center;/*加在a标签里不起作用，加在footer里面起作用*/
+			font-size: 12px;
+			color: blue;
+			line-height: 120px;
+			
+		}
+	.footer a{
+		text-decoration: underline;
 	}
 
 /*宽度什么时候可以给百分数，什么时候给确定值*/
