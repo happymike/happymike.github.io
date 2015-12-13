@@ -16,11 +16,13 @@ a{text-decoration: none;}
 .main{
 	width: 618px;
 	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .main ul{
 	width: 618px;
 	margin: 0 auto;/*width为确定值时起作用，为百分数时无作用*/
-	margin: 30px;/*没有此项为什么还有与header的上边距*/
+	/*没有此项为什么还有与header的上边距*/
 }
 	.main li{
 		height: 96px;/*高度该不该给？由什么属性控制*/
