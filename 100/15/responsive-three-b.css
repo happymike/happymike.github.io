@@ -19,6 +19,7 @@
 	.first{
 		float:left;
 		width: 50%;
+		background-color: #000;
 	}
 	.second{
 		float:left;

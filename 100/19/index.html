@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>java script</title>
+	<script src="http://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+	<style>
+		.circle{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #000;
+			margin: 0 auto;
+		}
+		.circle.green{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<!-- JS初步效果及基本操作 -->
+	<div class="circle"></div>
+
+
+	<!-- 必须在文件尾写 -->
+	<script>
+		$('.circle').click(function(){
+			alert('hello');
+		});
+		$('.circle').addClass('green');
+	</script>
+</body>
+</html>
