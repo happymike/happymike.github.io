@@ -15,19 +15,22 @@
 		.circle.green{
 			background-color: green;
 		}
+		.circle.red{
+			background-color: red;
+		}
 	</style>
 </head>
 <body>
 <!-- JS初步效果及基本操作 -->
 	<div class="circle"></div>
-
-
 	<!-- 必须在文件尾写 -->
 	<script>
-		$('.circle').click(function(){
-			alert('hello');
+		$('.circle').click(function()
+		{
+			// alert('hello');
+			$('.circle').toggleClass('green');
 		});
-		$('.circle').addClass('green');
+		
 	</script>
 </body>
 </html>
