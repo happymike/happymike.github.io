@@ -6,23 +6,67 @@
 	<script src="http://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
 	<style>
 		.circle{
-			width: 200px;
-			height: 200px;
+			width: 400px;
+			height: 400px;
 			border-radius: 50%;
 			background-color: #000;
 			margin: 0 auto;
 		}
 		.circle.green{
 			background-color: green;
+			color: red;
 		}
-		.circle.red{
-			background-color: red;
+		.circle h1{
+			color: red;
+			font-weight: 10px;
+			text-align: center;
+			padding-top: 20px;
 		}
+		.circle p{
+			color: green;
+			text-align: center;
+			
+		}
+		.side-nav{
+			position: fixed;
+			bottom: 0;
+			left: 100px;
+			top: 0;
+			background-color: teal;
+			width: 140px;
+		}
+		.box{
+			  width: 100px;
+			  height: 100px;
+			  background-color: red;
+			  transition:all 1s .1s;
+			  position: fixed;
+			  right: 100px;
+			  top: 50px;
+			}
+		.box.move{
+			  transform:translateX(100px)
+			}
 	</style>
 </head>
 <body>
-<!-- JS初步效果及基本操作 -->
-	<div class="circle"></div>
+<!-- JS初步效果及基本操作 -->	
+	<div class="side-nav"></div>
+	<div class="circle">
+		<h1>Position </h1>
+		<p>position<br>
+		和<br>
+		top/left/bottom/right<br>
+		配合使用<br>
+		，<br>
+		固定位置<br>
+		，<br>
+		盒子不设置高度<br>
+		，<br>
+		会有盒子顶天立地的效果...</p>
+	</div>
+	<div class="box">
+	</div>
 	<!-- 必须在文件尾写 -->
 	<script>
 		$('.circle').click(function()
