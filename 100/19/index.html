@@ -29,24 +29,38 @@
 		}
 		.side-nav{
 			position: fixed;
+			width: 140px;
+			background-color: teal;
 			bottom: 0;
 			left: 100px;
 			top: 0;
-			background-color: teal;
-			width: 140px;
+			transition:all 1s 1s;
+			transform:translateX(-240px);
+		}
+		.side-nav.show{
+			transform:translateX(0);
 		}
 		.box{
-			  width: 100px;
-			  height: 100px;
-			  background-color: red;
-			  transition:all 1s .1s;
 			  position: fixed;
+			  width: 140px;
+			  background-color: red;
 			  right: 100px;
-			  top: 50px;
+			  top: 0px;
+			  bottom: 0;
+			  transition:transform 1s .1s;
+			  transform:translateX(240px);
 			}
-		.box.move{
-			  transform:translateX(100px)
+		.box.show{
+			  transform:translateX(0);
 			}
+		.btn{
+			border-radius:50%;
+			background-color: blue;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			margin-top: 50px; 
+		}
 	</style>
 </head>
 <body>
@@ -65,14 +79,16 @@
 		，<br>
 		会有盒子顶天立地的效果...</p>
 	</div>
-	<div class="box">
-	</div>
+	<div class="btn"></div>
+	<div class="box"></div>
 	<!-- 必须在文件尾写 -->
 	<script>
-		$('.circle').click(function()
+		$('.btn').click(function()
 		{
 			// alert('hello');
 			$('.circle').toggleClass('green');
+			$('.side-nav').toggleClass('show');
+			$('.box').toggleClass('show');
 		});
 		
 	</script>
